@@ -1,4 +1,4 @@
-# CampusQueue_System
+adm# CampusQueue_System
 # Project Overview: 
 To develop a digital queue management system that allows students to join, monitor and manage queues remotely, improving efficiency and reducing waiting times on campus.
 
@@ -17,3 +17,14 @@ To develop a digital queue management system that allows students to join, monit
 -View queue position
 ### Admin Features
 -
+view all queues
+call the next student
+manage service points 
+monitor que activity
+
+##Technologies
+javascript, CSS, HTML and python
+MYSQL
+
+##Deployment platform
+Netlify
