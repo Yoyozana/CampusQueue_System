@@ -1,0 +1,114 @@
+# ----------------------------
+
+# Node / Frontend (if using npm)
+
+# ----------------------------
+
+node_modules/
+
+dist/
+
+build/
+
+.env
+
+.env.local
+
+# ----------------------------
+
+# Python
+
+# ----------------------------
+
+__pycache__/
+
+*.py[cod]
+
+*$py.class
+
+# Virtual environments
+
+venv/
+
+env/
+
+ENV/
+
+# Python packaging
+
+*.egg-info/
+
+*.egg
+
+dist/
+
+build/
+
+# Logs
+
+*.log
+
+# ----------------------------
+
+# IDE / Editor files
+
+# ----------------------------
+
+.vscode/
+
+.idea/
+
+*.swp
+
+*.swo
+
+# ----------------------------
+
+# OS files
+
+# ----------------------------
+
+.DS_Store
+
+Thumbs.db
+
+# ----------------------------
+
+# XAMPP / Local server
+
+# ----------------------------
+
+/xampp/
+
+htdocs/
+
+# ----------------------------
+
+# Database
+
+# ----------------------------
+
+*.sql
+
+*.sqlite3
+
+# ----------------------------
+
+# Environment variables
+
+# ----------------------------
+
+.env
+
+# ----------------------------
+
+# Temporary files
+
+# ----------------------------
+
+tmp/
+
+temp/
+
+*.tmp
+ 
