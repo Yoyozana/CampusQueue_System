@@ -8,3 +8,12 @@ To develop a digital queue management system that allows students to join, monit
 -Yolanda Angel Magwenyane(Project manager)
 -Vuyo Mqulwa(Designer)
 -Esethu Phangomso(Tester)
+
+##Features 
+### Student Features
+-Register & Login
+-Join a queue online
+-Get a queue ticket number
+-View queue position
+### Admin Features
+-
