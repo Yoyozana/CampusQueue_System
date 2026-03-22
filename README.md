@@ -1,5 +1,5 @@
 adm# CampusQueue_System
-# Project Overview: 
+## Project Overview: 
 To develop a digital queue management system that allows students to join, monitor and manage queues remotely, improving efficiency and reducing waiting times on campus.
 
 ##Team members
@@ -15,8 +15,8 @@ To develop a digital queue management system that allows students to join, monit
 -Join a queue online
 -Get a queue ticket number
 -View queue position
+-Notifications
 ### Admin Features
--
 view all queues
 call the next student
 manage service points 
