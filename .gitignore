@@ -1,114 +1,73 @@
-# ----------------------------
-
-# Node / Frontend (if using npm)
-
-# ----------------------------
-
+# =========================
+# Frontend (Node / Build)
+# =========================
 node_modules/
-
 dist/
-
 build/
 
+# Environment files 
 .env
-
 .env.local
 
-# ----------------------------
-
-# Python
-
-# ----------------------------
-
+# =========================
+# Python (Backend)
+# =========================
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-*.py[cod]
-
-*$py.class
-
-# Virtual environments
-
-venv/
-
-env/
-
-ENV/
-
-# Python packaging
-
-*.egg-info/
-
-*.egg
-
-dist/
-
-build/
-
-# Logs
-
-*.log
-
-# ----------------------------
-
-# IDE / Editor files
-
-# ----------------------------
-
-.vscode/
-
-.idea/
-
-*.swp
-
-*.swo
-
-# ----------------------------
-
-# OS files
-
-# ----------------------------
-
-.DS_Store
-
-Thumbs.db
-
-# ----------------------------
-
-# XAMPP / Local server
-
-# ----------------------------
-
-/xampp/
-
-htdocs/
-
-# ----------------------------
-
-# Database
-
-# ----------------------------
-
-*.sql
-
+# Databases
+*.db
 *.sqlite3
 
-# ----------------------------
+# Virtual environments
+venv/
+env/
+.venv/
 
-# Environment variables
+# Python packaging
+*.egg-info/
+*.egg
 
-# ----------------------------
+# =========================
+# Logs
+# =========================
+*.log
 
-.env
+# =========================
+# IDE / Editor files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# ----------------------------
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
 
+# =========================
+# Local server (XAMPP etc.)
+# =========================
+xampp/
+htdocs/
+
+# =========================
+# Database backups
+# =========================
+*.sql
+
+# Netlify
+# =========================
+.netlify
+
+# =========================
 # Temporary files
-
-# ----------------------------
-
+# =========================
 tmp/
-
 temp/
-
 *.tmp
- 
+*.temp
