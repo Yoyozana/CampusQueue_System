@@ -1,7 +1,7 @@
 # Daily Stand-ups Log
 
 ## Stand-up: 17 March, 2026
--**Yoyozana**: Created a `.gitignore` file to exclude unnecessary files from version control, ensuring a cleaner repository structure.
+-**Yolanda**: Created a `.gitignore` file to exclude unnecessary files from version control, ensuring a cleaner repository structure.
 -**Noxolo**: Updated the README with detailed features and technology information to provide the team with a clear overview of the project’s capabilities and technical stack.
 -**Ntando, Yolanda & Vuyo**: Made updates to the `README.md` file to refine the documentation, improve clarity, and incorporate recent changes in the project.
 -**Yolanda**: Completed the initial commit, establishing the foundational codebase for the CampusQueue_System project and setting up the main repository.
