@@ -26,19 +26,19 @@ During Sprint 1, the team successfully developed the basic queue system for Smar
 - Increase testing earlier in development
 
   ##DEMO
-   Meeting Logs (Agile Planning Topics)
+  - Meeting Logs (Agile Planning Topics)
   
 Meeting 1
-Discussed Agile methodology (Scrum)
-Assigned roles to team members
-Agreed on communication tools
+- Discussed Agile methodology (Scrum)
+- Assigned roles to team members
+- Agreed on communication tools
 
 Meeting 2
-Created sprint backlog
-Assigned tasks
-Estimated time for each task
+- Created sprint backlog
+- Assigned tasks
+- Estimated time for each task
 
 Meeting 3
-Reviewed progress
-Identified challenges
-Adjusted workflow
+- Reviewed progress
+- Identified challenges
+- Adjusted workflow
