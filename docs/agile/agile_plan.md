@@ -8,16 +8,16 @@ Scrum
 - **Product Owner**: Yolanda Angel Magwenyane  
   Responsible for managing the product backlog and ensuring the project meets goals  
 
-- **Scrum Master**: Vuyo Mqulwa  
+- **Scrum Master**: Nkosingiphile Noxolo Mdletshe
   Ensures Agile practices are followed and coordinates the team  
 
 - **Frontend Developer**: Nokubongwa Ngobese  
   Responsible for UI design and frontend implementation  
 
-- **Backend Developer**: Nkosingiphile Noxolo Mdletshe  
+- **Backend Developer**:   Esethu Phangomso
   Responsible for backend logic and database integration  
 
-- **Tester & Documentation**: Esethu Phangomso  
+- **Tester & Documentation**: Vuyo Mqulwa   
   Responsible for testing and maintaining documentation  
 
 
