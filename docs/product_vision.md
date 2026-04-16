@@ -33,4 +33,5 @@ The: Campus Queue Management System
 Is a: Web-based and mobile-accessible digital queue management platform.
 That: Allows users to join queues remotely, receive real-time queue numbers, track their position live, get notifications when they are approaching service, and enables administrators to control and monitor multiple queues efficiently.  
 Unlike: Traditional manual queue systems that require physical presence, operate on paper-based or verbal order, and cause long waiting lines, confusion, and congestion.
+
 Our product: System reduces physical waiting time by shifting waiting into a virtual queue, spreads arrivals more evenly, prevents overcrowding at service points, and improves efficiency, service speed, and overall user experience.
