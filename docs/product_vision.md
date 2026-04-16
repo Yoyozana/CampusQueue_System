@@ -1,7 +1,7 @@
 # Project Name: Campus Queue Management System
 
 ## Problem Statement
-Students often waste time standing in long queues on campus for services such as registration, financial aid, and administrative assistance. There is no efficient system to manage and track queues digitally using booking numbers.
+Students often waste time standing in long queues on campus for services such as registration, financial aid, and administrative assistance. There is no efficient system to manage and track queues digitally.
 
 ## Target Users
 - University students
@@ -9,7 +9,7 @@ Students often waste time standing in long queues on campus for services such as
 - Campus service departments
 
 ## Unique Value Proposition
-A web-based queue management system that allows students to join queues remotely, receive ticket numbers, and track their position in real time while enabling administrators to manage queues efficiently.
+A web-based queue management system that allows students to join queues remotely, receive ticket numbers, and track their position using ticket numbers in real time while enabling administrators to manage queues efficiently.
 
 ## Key Features
 - User authentication (login/register)
