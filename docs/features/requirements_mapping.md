@@ -28,3 +28,15 @@
 - Non-Functional Requirements:
   - Ticket generation must be instantaneous
   - System must ensure accuracy and reliability
+
+## Feature: Real-Time Queue Position Tracking
+
+- Functional Requirements:
+  - System must display the current queue number being served
+  - System must update queue position in real time
+  - Students must be able to view their position in the queue
+
+- Non-Functional Requirements:
+  - Updates must reflect within 1 second
+  - System must handle real-time data efficiently
+  - System must be reliable with minimal downtime
