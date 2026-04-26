@@ -1,14 +1,3 @@
-***Feature	Functional Requirement***
-## These define the specific behaviors and functions a system must perform
-Register & Login	The system shall allow students to create accounts and authenticate via secure login credentials.
-Join a Queue Online	The system shall allow authenticated students to select a service point and join its active queue remotely.
-Queue Ticket Number	Upon joining, the system shall generate and display a unique, sequential ticket number for the student.
-
-***Non-Functional Requirements***
-## These define the quality attributes and constraints of the system.
-Availability: The system should be accessible 99.9% of the time during campus operating hours via Netlify.
-Performance: Queue status updates and ticket generation should occur within 2 seconds of a user action.
-
 ## Student User Stories
 As a student, I want to register and log in so that I can access the queue management features and track my history.
 As a student, I want to join a queue online so that I don't have to wait in a physical line and can spend my time more productively.
