@@ -40,3 +40,14 @@
   - Updates must reflect within 1 second
   - System must handle real-time data efficiently
   - System must be reliable with minimal downtime
+## Feature: Service Selection (Registration, Finance, Administration)
+
+- Functional Requirements:
+  - Students must be able to select a service before joining the queue
+  - System must create separate queues for each service
+  - System must assign queue numbers based on selected service
+
+- Non-Functional Requirements:
+  - Service selection interface must be user-friendly
+  - System must support multiple service queues simultaneously
+  - System should respond quickly to user input
