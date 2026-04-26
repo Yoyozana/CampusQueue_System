@@ -2,7 +2,7 @@
 
 ## Team Members & Roles
 
-- Yolanda Angel Magwenyani – Project Manager  
+- Yolanda Angel Magwenyane – Project Manager  
 - Nokubongwa Ngobese – Frontend Developer  
 - Esethu Phangomso – Backend Developer  
 - Vuyo Mqulwa – Tester / Documentation Lead
