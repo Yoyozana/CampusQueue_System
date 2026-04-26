@@ -15,3 +15,7 @@
   - Students must be able to join a queue online
   - System must assign a queue number upon joining
   - System must store queue entries in order
+- Non-Functional Requirements:
+  - System should handle multiple users joining simultaneously
+  - Queue joining should be completed within 2 seconds
+  - System must be available at all times (high availability)
