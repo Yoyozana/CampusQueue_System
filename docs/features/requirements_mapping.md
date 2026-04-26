@@ -5,3 +5,7 @@
   - Users must be able to register with their details (name, student ID, password)
   - Users must be able to log in using valid credentials
   - System must validate user input before registration
+- Non-Functional Requirements:
+  - Login process should take less than 2 seconds
+  - System must securely store passwords (encryption)
+  - System must ensure user data privacy and security
