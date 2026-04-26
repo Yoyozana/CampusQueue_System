@@ -2,7 +2,7 @@
 
 ## Persona 1: Lihle (Student)
 - *Age*: 20
-- *Occupation*: 2nd-year Computer Science student at WSU
+- *Occupation*: 2nd-year Computer Science student at iWS
 - *Goal*: Grab lunch and get help from admin without missing lectures or standing in long queues.
 
 ### Scenario
