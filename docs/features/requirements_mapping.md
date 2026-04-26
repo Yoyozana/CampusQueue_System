@@ -25,3 +25,6 @@
   - System must generate unique ticket numbers automatically
   - Ticket numbers must follow a sequential order
   - System must prevent duplicate ticket numbers
+- Non-Functional Requirements:
+  - Ticket generation must be instantaneous
+  - System must ensure accuracy and reliability
