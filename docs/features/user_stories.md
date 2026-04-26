@@ -1,4 +1,4 @@
-## User Stories - CampusQueue_System
+# User Stories - CampusQueue_System
 
 ## Student User Stories
 - As a student, I want to register and log in so that I can access the queue management features and track my history.
