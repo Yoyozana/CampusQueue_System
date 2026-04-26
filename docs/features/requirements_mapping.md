@@ -51,3 +51,14 @@
   - Service selection interface must be user-friendly
   - System must support multiple service queues simultaneously
   - System should respond quickly to user input
+## Feature: Admin Dashboard for Queue Management
+
+- Functional Requirements:
+  - Admin must log in to access dashboard
+  - Admin must view all active queues
+  - Admin must manage queue operations (monitor, control)
+
+- Non-Functional Requirements:
+  - Dashboard must load within 2 seconds
+  - System must restrict access to authorized users only
+  - Interface must be easy to use
