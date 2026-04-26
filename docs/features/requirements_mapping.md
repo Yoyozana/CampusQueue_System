@@ -62,3 +62,14 @@
   - Dashboard must load within 2 seconds
   - System must restrict access to authorized users only
   - Interface must be easy to use
+## Feature: Call Next Student Functionality
+
+- Functional Requirements:
+  - Admin must be able to call the next student in queue
+  - System must update the current queue number
+  - System must notify the next student
+
+- Non-Functional Requirements:
+  - Action must execute instantly (≤ 1 second)
+  - System must not skip or duplicate numbers
+  - System must ensure accuracy in queue progression
