@@ -9,3 +9,9 @@
   - Login process should take less than 2 seconds
   - System must securely store passwords (encryption)
   - System must ensure user data privacy and security
+## Feature: Online Queue Joining
+
+- Functional Requirements:
+  - Students must be able to join a queue online
+  - System must assign a queue number upon joining
+  - System must store queue entries in order
