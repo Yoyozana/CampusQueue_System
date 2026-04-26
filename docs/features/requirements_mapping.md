@@ -19,3 +19,9 @@
   - System should handle multiple users joining simultaneously
   - Queue joining should be completed within 2 seconds
   - System must be available at all times (high availability)
+## Feature: Automatic Ticket Number Generation
+
+- Functional Requirements:
+  - System must generate unique ticket numbers automatically
+  - Ticket numbers must follow a sequential order
+  - System must prevent duplicate ticket numbers
