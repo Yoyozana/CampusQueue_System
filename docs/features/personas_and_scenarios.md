@@ -14,7 +14,7 @@ Lihle opens the CampusQueue app during her 15-min break. She checks live queue t
 - *Occupation*: Student Admin Officer
 - *Goal*: Manage student consultations efficiently and reduce overcrowding at the office during registration.
 
-###Scenario
+### Scenario
 Mr. Dlamini logs into the CampusQueue staff dashboard at 8am. He sees 18 appointments booked for the day, with student names, issues, and uploaded docs already attached. He sets his availability to 10am–3pm and adds a 15-min buffer between slots. When a student is late, he marks them as "no-show" and the system auto-notifies the next person that their slot moved up. By 3pm, he’s helped everyone without a chaotic hallway queue.
 
 
