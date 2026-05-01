@@ -34,4 +34,4 @@ javascript, CSS, HTML and python
 MYSQL
 
 ## Deployment platform
-Netlify
+Netlify / Render
