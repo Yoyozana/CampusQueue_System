@@ -73,4 +73,4 @@ Manage Services → Update System Configuration
 
 
 ## Summary
-The wireframes provide a clear visual structure of the CampusQueue_System. They ensure that both student and admin interactions are simple, efficient, and easy to navigate. The UI design supports a smooth flow from login to queue management, improving overall usability and system efficiency.
+The wireframes provide a clear visual structure of the CampusQueue_System of how it works. They ensure that both student and admin interactions are simple, efficient, and easy to navigate. The UI design supports a smooth flow from login to queue management, improving overall usability and system efficiency.
