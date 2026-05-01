@@ -31,7 +31,9 @@ CampusQueue_System is a web/mobile-based platform designed to digitize the queui
 
 ## Technologies
 -JavaScript, CSS, HTML 
+
 -Python
+
 -MYSQL
 
 ## Deployment platform
