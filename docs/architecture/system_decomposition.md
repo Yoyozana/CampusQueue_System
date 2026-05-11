@@ -22,3 +22,10 @@
 - Admin Dashboard: Allow administrators to monitor queues, manage users, configure departments, and view system reports.
 - Database Management: Store and manage user records, queue data, appointments, reports, and notification logs.
 - API & Integration Services: Enable communication between frontend, backend, and external services such as SMS or email APIs.
+
+## Important Architectural Considerations
+- The system should support real-time queue updates to reduce waiting confusion.
+- Modules should remain loosely coupled for easier maintenance and scalability.
+- Security measures must protect sensitive student and staff information.
+- The architecture should support future expansion such as mobile app integration.
+- The system must handle increasing numbers of users without performance degradation.
