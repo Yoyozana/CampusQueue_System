@@ -57,5 +57,3 @@ CampusQueue is a digital queue management system for university campuses. Studen
 - Monitors analytics for operational insights.
 
 ---
-
-## File Structure (to upload to GitHub)
