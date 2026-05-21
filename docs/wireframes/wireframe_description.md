@@ -1,6 +1,5 @@
-# Wireframes & UI Prototypes Description
 
-# CampusQueue - Wireframe Description
+# CampusQueue - Wirefram Description
 
 ## Project Overview
 CampusQueue is a digital queue management system for university campuses. Students can join queues for various services, track their position in real-time, and receive notifications. Administrators can manage queues, call next students, and monitor analytics.
