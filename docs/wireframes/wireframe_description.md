@@ -1,76 +1,61 @@
 # Wireframes & UI Prototypes Description
 
-## Overview
-This document describes the user interface (UI) wireframes for the CampusQueue_System. The wireframes represent the structure and layout of key system screens before development. They focus on usability, navigation flow, and system interaction rather than visual design.
+# CampusQueue - Wireframe Description
 
+## Project Overview
+CampusQueue is a digital queue management system for university campuses. Students can join queues for various services, track their position in real-time, and receive notifications. Administrators can manage queues, call next students, and monitor analytics.
 
+## UI Flow
 
-## UI Design Approach
-The system follows a simple and intuitive design approach to ensure ease of use for students and administrators. The layout is structured to minimize confusion and reduce the number of steps required to perform actions such as joining a queue or managing service points.
+### 1. Home Page (`home_page.png`)
+**Purpose:** Landing page for all users (guests, students, and admins).
 
+**Components:**
+- **Logo/Header:** Displays "CampusQueue" branding.
+- **Login/Register Buttons:b** Top-right corner for authentication.
+- **Join Queue Button:** Prominent green button – primary CTA for students.
+- **Queue Status Panel:** Shows active queues, people waiting, and estimated wait time (visible to all).
+- **Footer:** Copyright and contact information.
 
+**User Flow:**
+- Guest → clicks Login → goes to login page.
+- Guest → clicks Register → goes to registration page.
+- Student (logged in) → clicks "Join Queue" → selects service type → receives ticket number → redirected to Student Dashboard.
 
-## UI Flow Description
+---
 
-### 1. Login Page
-- Entry point of the system
-- Users (students/admins) enter credentials
-- Successful login redirects users to their dashboard
+### 2. Student Dashboard (`student_dashboard.png`)
+**Purpose:** Personalized view for students after joining a queue.
 
-Flow:
-Login → Authentication → Dashboard
+**Components:**
+- **Profile Info:** Student's name, ID, department.
+- **Ticket Number:** Unique queue ticket (e.g., A-102).
+- **Queue Position:** Real-time position in line.
+- **Notifications:** System messages (e.g., wait time updates, service alerts).
+- **Logout Button:** Ends session and returns to home page.
 
+**User Flow:**
+- Student logs in → views current ticket and position.
+- System pushes notifications when position changes.
+- Student can logout or wait to be served.
 
+---
 
-### 2. Student Dashboard
-- Displays user greeting and active queue status
-- Provides navigation to:
-  - Join Queue
-  - View Queue Status
+### 3. Admin Dashboard (`admin_dashboard.png`)
+**Purpose:** Administrative control panel for managing queues.
 
-Flow:
-Dashboard → Join Queue / View Status
+**Components:**
+- **All Queues:** Live list of all service queues with waiting counts.
+- **Call Next Student:** Button to serve the next person in line.
+- **Manage Service Points:** Grid of service points with status (Open/Closed) and edit controls.
+- **Queue Analytics:** Daily statistics (students served, avg wait time, peak hours).
 
+**User Flow:**
+- Admin logs in → views all active queues.
+- Clicks "Call Next Student" → system announces ticket number.
+- Edits service point statuses as needed.
+- Monitors analytics for operational insights.
 
+---
 
-### 3. Join Queue Page
-- Allows students to select a service (e.g. Registration, Finance)
-- Generates a unique ticket number automatically
-- Confirms queue entry
-
-Flow:
-Select Service → Join Queue → Ticket Generated
-
-
-
-### 4. Queue Status Page
-- Displays current queue position
-- Shows estimated waiting time
-- Provides real-time updates and notifications
-
-Flow:
-Live Queue Updates → Status Display
-
-
-
-### 5. Admin Dashboard
-- Displays all active queues
-- Allows admin to call next student
-- Shows queue statistics and service monitoring
-
-Flow:
-Admin Login → Dashboard → Queue Management
-
-
-
-### 6. Service Management Page
-- Admin can add, edit, or remove services
-- Controls available service points in the system
-
-Flow:
-Manage Services → Update System Configuration
-
-
-
-## Summary
-The wireframes provide a clear visual structure of the CampusQueue_System of how it works. They ensure that both student and admin interactions are simple, efficient, and easy to navigate. The UI design supports a smooth flow from login to queue management, improving overall usability and system efficiency.
+## File Structure (to upload to GitHub)
