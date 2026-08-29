@@ -1,0 +1,17 @@
+USERS
+  │
+  ├───────────────┐
+  │               │
+QUEUE_TICKETS   NOTIFICATIONS
+  │
+  │
+QUEUES
+  │
+  │
+SERVICES
+
+
+ADMIN
+  │
+  │
+ADMIN_ACTIONS
