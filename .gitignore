@@ -56,9 +56,10 @@ xampp/
 htdocs/
 
 # =========================
-# Database backups
+# Database backups (NOT schema/seed files, which ARE tracked)
 # =========================
-*.sql
+*_backup.sql
+*.dump.sql
 
 # Netlify
 # =========================
