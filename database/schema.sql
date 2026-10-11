@@ -52,12 +52,15 @@ CREATE TABLE users (
     password_hash   VARCHAR(255) NOT NULL,         -- hashed, never plaintext
     role            ENUM('student', 'admin') NOT NULL DEFAULT 'student',
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    failed_login_attempts INT NOT NULL DEFAULT 0,  -- wrong passwords in a row
+    locked_until    DATETIME NULL,                 -- UTC; account locked until this time
     CONSTRAINT chk_student_email_format CHECK (
         role <> 'student' OR email REGEXP '^[0-9]+@mywsu\\.ac\\.za$'
     ),
     CONSTRAINT chk_student_username_is_student_number CHECK (
         role <> 'student' OR username = student_number
     )
+
     -- Both CHECKs are skipped whenever role <> 'student' (admin/staff
     -- accounts use their own email domain and choose their own username).
 ) ENGINE=InnoDB;
