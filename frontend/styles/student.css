@@ -1,0 +1,58 @@
+/* ============================================================
+   CampusQueue — student pages
+   ============================================================ */
+
+
+/* Current queue highlight card */
+.current-queue-card {
+  background: linear-gradient(135deg, #FBEFD8, #F7E4C2); border: 1px solid var(--ochre-dark);
+  border-radius: 10px; padding: 1.4rem; margin-bottom: 1.6rem;
+}
+.current-queue-card .top-row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; }
+.current-queue-card .queue-title { font-weight: 700; font-size: 1.05rem; }
+.current-queue-card .queue-loc { color: var(--muted); font-size: 0.82rem; }
+.current-queue-card .ticket-block { display: flex; gap: 2rem; margin-top: 1rem; flex-wrap: wrap; align-items: flex-end; }
+.current-queue-card .ticket-num-big { font-family: var(--font-mono); font-size: 1.6rem; font-weight: 600; color: var(--maroon-dark); }
+.current-queue-card .stat-mini { font-size: 0.78rem; color: var(--muted); }
+.current-queue-card .stat-mini strong { display: block; font-size: 1.1rem; color: var(--ink); font-family: var(--font-mono); }
+.btn-leave {
+  background: transparent; border: 1.5px solid var(--terracotta); color: var(--terracotta);
+  border-radius: 6px; padding: 0.55rem 1.1rem; font-weight: 600; font-size: 0.85rem;
+}
+.btn-leave:hover { background: var(--terracotta); color: white; }
+
+.joined-tag { color: var(--teal); font-size: 0.78rem; font-weight: 700; }
+.service-card.is-joined { border-color: var(--teal); box-shadow: 0 0 0 1px var(--teal) inset; }
+
+/* ================= MY QUEUE ================= */
+.queue-detail-card { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; max-width: 420px; }
+.queue-detail-card.wide { max-width: 560px; }
+.queue-head { font-weight: 600; margin-bottom: 0.9rem; }
+.queue-head .loc { font-weight: 400; color: var(--muted); font-size: 0.8rem; }
+.serving-box { background: var(--maroon-dark); color: var(--cream); border-radius: 8px; padding: 1rem; text-align: center; margin-bottom: 1.1rem; }
+.serving-box .label { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ochre); font-family: var(--font-mono); }
+.serving-box .num { font-family: var(--font-mono); font-size: 1.6rem; font-weight: 600; margin-top: 0.2rem; }
+.your-ticket-box { border: 1.5px dashed var(--line); border-radius: 8px; padding: 1rem; text-align: center; margin-bottom: 1.1rem; }
+.your-ticket-box .label { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-family: var(--font-mono); }
+.your-ticket-box .num { font-family: var(--font-mono); font-size: 1.9rem; font-weight: 600; color: var(--maroon-dark); }
+.tier-banner { border: 1px solid; border-radius: 6px; padding: 0.6rem 0.85rem; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.9rem; text-align: center; }
+.tier-1 { background: #C1603C22; border-color: #C1603C; color: #C1603C; }
+.tier-2 { background: #D99A2B22; border-color: #D99A2B; color: #B9821F; }
+.tier-3 { background: #B9A22E22; border-color: #B9A22E; color: #8F7D1F; }
+.tier-called { background: #4F848122; border-color: var(--teal); color: var(--teal); }
+.detail-row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--line); font-size: 0.86rem; }
+.detail-row:last-of-type { border-bottom: none; }
+.info-strip { background: #EAF2F1; color: var(--teal); border-radius: 6px; padding: 0.7rem 0.9rem; font-size: 0.82rem; margin-top: 1rem; display: flex; gap: 0.5rem; }
+.btn-leave.btn-block { width: 100%; margin-top: 1rem; }
+
+/* ================= NOTIFICATIONS / HELP ================= */
+.notif-page-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.notif-list { margin-top: 1rem; }
+.faq-q { font-weight: 600; font-size: 0.9rem; margin-top: 0.4rem; }
+.faq-a { color: var(--muted); font-size: 0.87rem; margin: 0.3rem 0 1rem; }
+.faq-a:last-child { margin-bottom: 0; }
+
+@media (max-width: 600px) {
+  .current-queue-card .ticket-block { gap: 1.1rem; }
+  .queue-detail-card, .queue-detail-card.wide { max-width: 100%; }
+}

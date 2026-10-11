@@ -1,0 +1,37 @@
+/* ============================================================
+   CampusQueue — shared components: service cards, status pills,
+   notification lists and empty states (student + admin pages)
+   ============================================================ */
+/* ================= SERVICE CARDS (shared) ================= */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1rem; }
+
+.service-card { background: var(--paper); border: 1px solid var(--line); border-radius: 9px; padding: 1.1rem; }
+.service-card .icon-badge {
+  width: 38px; height: 38px; border-radius: 8px; background: #F3E7D2; color: var(--ochre-dark);
+  display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 0.6rem;
+}
+.service-card .s-name { font-weight: 600; font-size: 0.95rem; }
+.service-card .s-loc { color: var(--muted); font-size: 0.78rem; margin-bottom: 0.2rem; }
+.service-card .s-count { color: var(--muted); font-size: 0.78rem; margin-bottom: 0.8rem; }
+.btn-join { width: 100%; background: var(--maroon-dark); color: var(--cream); border: none; border-radius: 6px; padding: 0.6rem; font-weight: 600; font-size: 0.85rem; }
+.btn-join:hover { background: var(--maroon); }
+.btn-join:disabled { background: #D8CBBB; color: #9A8C7D; cursor: not-allowed; }
+.status-pill { display: inline-block; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.12rem 0.5rem; border-radius: 3px; margin-bottom: 0.5rem; }
+.status-open { background: rgba(79,132,129,0.15); color: var(--teal); }
+.status-paused { background: rgba(217,154,43,0.18); color: var(--ochre-dark); }
+.status-closed { background: rgba(193,96,60,0.15); color: var(--terracotta); }
+
+/* ================= LISTS + STATES (student and admin pages) ================= */
+.link-btn { background: none; border: none; color: var(--terracotta); font-size: 0.85rem; font-weight: 600; padding: 0; }
+.link-btn:hover { text-decoration: underline; }
+.notification-item { border-bottom: 1px solid var(--line); padding: 0.8rem 0; font-size: 0.88rem; display: flex; gap: 0.7rem; }
+.notification-item:last-child { border-bottom: none; }
+.notification-item.unread { border-left: 3px solid var(--ochre); padding-left: 0.6rem; }
+.notification-item .n-icon { width: 30px; height: 30px; border-radius: 50%; background: #F3E7D2; color: var(--ochre-dark); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem; }
+.notification-item .time { color: var(--muted); font-size: 0.72rem; margin-top: 0.15rem; }
+.empty-state { color: var(--muted); text-align: center; padding: 2rem; border: 1.5px dashed var(--line); border-radius: 8px; font-size: 0.88rem; background: var(--paper); }
+.empty-state a { color: var(--terracotta); font-weight: 600; }
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; }
+}

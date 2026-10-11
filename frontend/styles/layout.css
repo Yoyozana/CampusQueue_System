@@ -1,0 +1,76 @@
+/* ============================================================
+   CampusQueue — app shell shared by the student and admin pages:
+   sidebar, topbar and page container
+   ============================================================ */
+#screen-app { display: flex; min-height: 100vh; }
+
+.sidebar {
+  width: var(--sidebar-w); background: var(--maroon-dark); color: var(--cream);
+  flex-shrink: 0; display: flex; flex-direction: column; padding: 1.2rem 0.9rem;
+}
+.sidebar .brand-mini { display: flex; align-items: center; gap: 0.55rem; padding: 0 0.4rem 1.3rem; }
+.sidebar .brand-mini .crest-sm {
+  width: 32px; height: 32px; border-radius: 50%; background: var(--maroon-dark); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,0.18);
+}
+.sidebar .brand-mini .crest-sm img { width: 140%; height: 140%; object-fit: cover; }
+.sidebar .brand-mini .name { font-weight: 700; font-size: 0.92rem; line-height: 1.15; }
+.sidebar .brand-mini .name span { display: block; font-size: 0.58rem; color: var(--ochre); letter-spacing: 0.06em; }
+
+.nav-item {
+  display: flex; align-items: center; gap: 0.65rem; padding: 0.65rem 0.7rem; border-radius: 7px;
+  color: #E4D4C8; font-size: 0.87rem; font-weight: 500; margin-bottom: 0.15rem; cursor: pointer;
+  border: none; background: transparent; width: 100%; text-align: left; position: relative;
+}
+.nav-item:hover { background: rgba(255,255,255,0.06); }
+.nav-item.active { background: var(--ochre); color: var(--maroon-dark); font-weight: 600; }
+.nav-item .icon { width: 18px; text-align: center; }
+.nav-item .badge {
+  margin-left: auto; background: var(--terracotta); color: white; font-size: 0.68rem;
+  border-radius: 999px; padding: 0.05rem 0.45rem; font-family: var(--font-mono);
+}
+.nav-item.active .badge { background: var(--maroon-dark); color: var(--cream); }
+
+.sidebar-footer {
+  margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex; align-items: center; gap: 0.6rem; padding-left: 0.4rem;
+}
+.avatar-circle {
+  width: 34px; height: 34px; border-radius: 50%; background: var(--ochre); color: var(--maroon-dark);
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
+}
+.sidebar-footer .who { font-size: 0.82rem; }
+.sidebar-footer .who .role { color: #C8B7AA; font-size: 0.72rem; }
+
+.main-col { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+
+.topbar {
+  background: var(--paper); border-bottom: 1px solid var(--line); padding: 1rem 1.75rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.topbar h1 { font-family: var(--font-display); font-size: 1.25rem; margin: 0; font-weight: 600; }
+.topbar p { margin: 0.1rem 0 0; color: var(--muted); font-size: 0.85rem; }
+.bell-wrap { position: relative; cursor: pointer; font-size: 1.2rem; }
+.bell-wrap .badge-count {
+  position: absolute; top: -6px; right: -8px; background: var(--terracotta); color: white;
+  font-size: 0.62rem; border-radius: 999px; padding: 0.05rem 0.4rem; font-family: var(--font-mono);
+}
+
+.page { padding: 1.75rem; }
+a.nav-item { text-decoration: none; }
+.bell-wrap { background: none; border: none; padding: 0; line-height: 1; text-decoration: none; }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 860px) {
+  #screen-app { flex-direction: column; }
+  .sidebar { width: 100%; flex-direction: row; overflow-x: auto; align-items: center; padding: 0.7rem; }
+  .sidebar .brand-mini { display: none; }
+  .sidebar-footer { display: none; }
+  .nav-item { width: auto; flex-shrink: 0; white-space: nowrap; margin-bottom: 0; }
+  .nav-item .badge { margin-left: 0.4rem; }
+}
+@media (max-width: 600px) {
+  .topbar { padding: 0.85rem 1.1rem; flex-wrap: wrap; gap: 0.5rem; }
+  .topbar h1 { font-size: 1.05rem; }
+  .page { padding: 1.1rem; }
+}

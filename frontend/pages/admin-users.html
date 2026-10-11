@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Users — CampusQueue | Walter Sisulu University</title>
+<link rel="icon" type="image/png" href="../assets/wsu-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/variables.css">
+<link rel="stylesheet" href="../styles/components.css">
+<link rel="stylesheet" href="../styles/layout.css">
+<link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body data-page="users">
+
+<div id="toast-stack" aria-live="polite"></div>
+
+<div id="screen-app">
+
+  <nav class="sidebar" id="sidebar" data-role="admin" data-active="users" aria-label="Admin menu"></nav>
+
+  <div class="main-col">
+    <header class="topbar">
+      <div>
+        <h1>Users</h1>
+        <p>Accounts that have used CampusQueue this session.</p>
+      </div>
+      <span class="helper" id="todays-queue-label" style="margin:0;"></span>
+    </header>
+
+    <main class="page">
+      <div class="section-eyebrow">Users</div>
+      <h2>Accounts</h2>
+      <p class="helper">Students who have taken a ticket, and the signed-in administrator.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Username</th><th>Role</th><th>Student number</th></tr></thead>
+          <tbody id="users-table-body"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="../js/config.js"></script>
+<script src="../services/state.js"></script>
+<script src="../services/api.js"></script>
+<script src="../services/notificationService.js"></script>
+<script src="../services/queueService.js"></script>
+<script src="../services/userService.js"></script>
+<script src="../components/toast.js"></script>
+<script src="../components/service-cards.js"></script>
+<script src="../components/sidebar.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

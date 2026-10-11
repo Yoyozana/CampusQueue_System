@@ -1,0 +1,77 @@
+/* ============================================================
+   CampusQueue — welcome / login page
+   ============================================================ */
+/* ================= LOGIN ================= */
+#screen-login { display: flex; min-height: 100vh; background: var(--paper); }
+
+.login-hero {
+  flex: 1; max-width: 460px; background: linear-gradient(180deg, var(--maroon-dark) 0%, #35131E 100%);
+  color: var(--cream); display: flex; flex-direction: column; min-width: 300px; position: relative; overflow: hidden;
+}
+.login-hero .hero-top { padding: 2.5rem 2.5rem 1rem; }
+.login-hero .crest-mark { margin-bottom: 0.3rem; }
+.login-hero .crest-mark .wsu-logo-full { display: block; width: 100%; max-width: 320px; height: auto; }
+
+.login-hero .product-name { font-family: var(--font-display); font-weight: 600; font-size: 1.9rem; margin: 2rem 0 0.3rem; }
+.login-hero .product-name .accent { color: var(--ochre); }
+.login-hero .product-tag { color: #E4D4C8; font-size: 0.95rem; margin: 0; }
+
+.campus-illustration { margin-top: auto; width: 100%; display: block; flex: 1 1 auto; min-height: 260px; object-fit: cover; object-position: center 65%; }
+
+.login-panel { flex: 1; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+.login-card { width: 100%; max-width: 420px; }
+.login-card h2 { font-family: var(--font-display); color: var(--maroon-dark); margin: 0 0 0.3rem; font-size: 2rem; font-weight: 700; }
+.login-card p.sub { color: var(--muted); font-size: 0.98rem; margin: 0 0 2rem; }
+
+.field { margin-bottom: 1.3rem; }
+.field label { display: block; font-size: 0.9rem; font-weight: 500; margin-bottom: 0.5rem; color: var(--ink); }
+.input-icon-wrap { position: relative; }
+.input-icon-wrap .field-icon {
+  position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none;
+  display: flex; align-items: center; justify-content: center;
+}
+.input-icon-wrap .field-icon svg { width: 18px; height: 18px; display: block; }
+.input-icon-wrap input {
+  width: 100%; padding: 0.95rem 1rem 0.95rem 2.8rem; border: 1px solid var(--line); border-radius: 10px;
+  font-family: var(--font-body); font-size: 0.95rem; background: var(--paper);
+}
+.input-icon-wrap.has-toggle input { padding-right: 2.8rem; }
+.input-icon-wrap input:focus { outline: 2px solid var(--ochre); outline-offset: 1px; }
+.toggle-eye {
+  position: absolute; right: 0.9rem; top: 50%; transform: translateY(-50%); background: none; border: none;
+  color: var(--muted); cursor: pointer; padding: 0.2rem; display: flex; align-items: center; justify-content: center;
+}
+.toggle-eye svg { width: 18px; height: 18px; display: block; }
+.toggle-eye:hover { color: var(--ink); }
+
+.row-forgot { display: flex; justify-content: flex-end; font-size: 0.88rem; margin: 0 0 1.6rem; }
+.row-forgot a { color: var(--terracotta); text-decoration: none; }
+.row-forgot a:hover { text-decoration: underline; }
+
+.btn-login {
+  width: 100%; background: var(--maroon-dark); color: var(--cream); border: none; border-radius: 10px;
+  padding: 1rem; font-weight: 600; font-size: 1rem;
+}
+.btn-login:hover { background: var(--maroon); }
+.login-error {
+  display: none; background: rgba(193,96,60,0.12); border: 1px solid var(--terracotta); color: var(--terracotta);
+  border-radius: 8px; padding: 0.6rem 0.85rem; font-size: 0.85rem; margin-bottom: 1rem;
+}
+.login-error.visible { display: block; }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 860px) {
+  #screen-login { flex-direction: column; }
+  .login-hero { max-width: none; padding: 0; }
+  .login-hero .hero-top { padding: 2rem 1.5rem 0.5rem; }
+  .login-hero .crest-mark .wsu-logo-full { max-width: 260px; }
+  .campus-illustration { height: 130px; }
+}
+@media (max-width: 600px) {
+  .login-card h2 { font-size: 1.4rem; }
+  .login-panel { padding: 1.5rem 1.25rem; }
+}
+@media (max-width: 420px) {
+  .campus-illustration { display: none; }
+  .login-hero .product-name { font-size: 1.5rem; margin-top: 1.3rem; }
+}

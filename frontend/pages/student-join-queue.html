@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Queue — CampusQueue | Walter Sisulu University</title>
+<link rel="icon" type="image/png" href="../assets/wsu-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/variables.css">
+<link rel="stylesheet" href="../styles/components.css">
+<link rel="stylesheet" href="../styles/layout.css">
+<link rel="stylesheet" href="../styles/student.css">
+</head>
+<body data-page="join-queue">
+
+<div id="toast-stack" aria-live="polite"></div>
+
+<div id="screen-app">
+
+  <nav class="sidebar" id="sidebar" data-role="student" data-active="join-queue" aria-label="Student menu"></nav>
+
+  <div class="main-col">
+    <header class="topbar">
+      <div>
+        <h1>Join Queue</h1>
+        <p>Browse and join any open campus service.</p>
+      </div>
+      <a class="bell-wrap" href="student-notifications.html" aria-label="Notifications">🔔<span class="badge-count" id="topbar-badge" style="display:none;">0</span></a>
+    </header>
+
+    <main class="page">
+      <div class="section-eyebrow">Join a queue</div>
+      <h2>All campus services</h2>
+      <p class="helper">You can be in one queue at a time. Joining another queue leaves your current one.</p>
+      <div class="grid" id="services-grid"></div>
+    </main>
+  </div>
+</div>
+
+<script src="../js/config.js"></script>
+<script src="../services/state.js"></script>
+<script src="../services/api.js"></script>
+<script src="../services/notificationService.js"></script>
+<script src="../services/queueService.js"></script>
+<script src="../components/toast.js"></script>
+<script src="../components/service-cards.js"></script>
+<script src="../components/sidebar.js"></script>
+<script src="../js/student.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* ============================================================
+   CampusQueue — admin pages (choose today's queue + dashboard pages)
+   ============================================================ */
+#screen-queue-select {
+  display: flex; min-height: 100vh; background: var(--cream);
+  flex-direction: column; align-items: center; padding: 3rem 1.5rem; position: relative;
+}
+.select-head { text-align: center; max-width: 520px; margin-bottom: 2rem; }
+.select-head h2 { font-size: 1.5rem; }
+#queue-select-grid { max-width: 900px; width: 100%; }
+
+/* queue already chosen for this session */
+.service-card.is-selected { border-color: var(--ochre); box-shadow: 0 0 0 1px var(--ochre) inset; }
+
+/* signed-in user + log out, top right */
+.admin-bar {
+  position: absolute; top: 1rem; right: 1.5rem; display: flex; align-items: center; gap: 0.75rem;
+  font-size: 0.85rem; color: var(--muted);
+}
+.link-quiet { color: var(--terracotta); font-weight: 600; text-decoration: none; }
+.link-quiet:hover { text-decoration: underline; }
+
+@media (max-width: 860px) {
+  #screen-queue-select { padding: 3.5rem 1rem 2rem; }
+}
+
+/* ================= DASHBOARD ================= */
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 1.6rem; }
+.stat-card { background: var(--paper); border: 1px solid var(--line); border-radius: 9px; padding: 1.1rem; }
+.stat-card .num { font-family: var(--font-mono); font-size: 1.7rem; font-weight: 600; }
+.stat-card .lbl { font-size: 0.8rem; color: var(--muted); }
+.stat-card.c1 .num { color: var(--ochre-dark); }
+.stat-card.c2 .num { color: var(--maroon); }
+.stat-card.c3 .num { color: var(--teal); }
+.stat-card.c4 .num { color: var(--terracotta); }
+
+.admin-queue-detail { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 1.4rem; }
+.admin-queue-detail .head-row { display: flex; justify-content: space-between; align-items: center; gap: 0.7rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+.head-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.pill-gap { margin-left: 0.5rem; }
+.serving-inline { display: flex; align-items: center; gap: 1.5rem; margin: 0.8rem 0 1.2rem; flex-wrap: wrap; }
+.serving-inline .num { font-family: var(--font-mono); font-size: 1.7rem; color: var(--maroon-dark); font-weight: 600; }
+.serving-actions { display: flex; gap: 0.5rem; align-self: flex-end; }
+.btn-call-next { background: var(--teal); color: white; border: none; border-radius: 6px; padding: 0.6rem 1.1rem; font-weight: 600; font-size: 0.85rem; }
+.btn-call-next:hover { opacity: 0.9; }
+.btn-call-next:disabled { background: #D8CBBB; color: #9A8C7D; cursor: not-allowed; opacity: 0.7; }
+.sub-label { color: var(--muted); font-size: 0.87rem; margin: 1.1rem 0 0.3rem; }
+.queue-controls { margin-top: 1rem; }
+
+/* ================= TABLES + BUTTONS ================= */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table-scroll table { min-width: 420px; }
+table { width: 100%; border-collapse: collapse; margin-top: 0.6rem; }
+th, td { text-align: left; padding: 0.6rem; border-bottom: 1px solid var(--line); font-size: 0.85rem; }
+th { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+td.ticket-num { font-family: var(--font-mono); color: var(--maroon-dark); font-weight: 600; }
+.pill-btn { background: transparent; border: 1.4px solid var(--line); color: var(--ink); border-radius: 999px; padding: 0.32rem 0.85rem; font-size: 0.78rem; margin-right: 0.35rem; text-decoration: none; display: inline-block; }
+.pill-btn:hover { border-color: var(--teal); color: var(--teal); }
+.pill-btn.ok { border-color: var(--teal); color: var(--teal); }
+.pill-btn.danger:hover { border-color: var(--terracotta); color: var(--terracotta); }
+.pill-btn.warn:hover { border-color: var(--ochre-dark); color: var(--ochre-dark); }
+.s-name .prefix { color: var(--muted); font-weight: 400; font-size: 0.78rem; }
+
+@media (max-width: 600px) {
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .serving-inline { gap: 1rem; }
+}

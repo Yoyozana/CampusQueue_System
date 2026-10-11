@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose a queue — CampusQueue | Walter Sisulu University</title>
+<link rel="icon" type="image/png" href="../assets/wsu-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/variables.css">
+<link rel="stylesheet" href="../styles/components.css">
+<link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body data-page="select">
+
+<div id="toast-stack" aria-live="polite"></div>
+
+<!-- ======================= ADMIN: CHOOSE TODAY'S QUEUE ======================= -->
+<div id="screen-queue-select">
+  <div class="admin-bar">
+    <span id="admin-name"></span>
+    <a class="link-quiet" href="../index.html" id="logout-link">Log out</a>
+  </div>
+
+  <div class="select-head">
+    <div class="section-eyebrow">Before you start</div>
+    <h2>Which service are you managing today?</h2>
+    <p class="helper">Pick the queue for your desk this session. You can switch later if you move counters.</p>
+  </div>
+
+  <div class="grid" id="queue-select-grid"></div>
+</div>
+
+<script src="../js/config.js"></script>
+<script src="../services/state.js"></script>
+<script src="../services/api.js"></script>
+<script src="../services/notificationService.js"></script>
+<script src="../services/queueService.js"></script>
+<script src="../services/userService.js"></script>
+<script src="../components/toast.js"></script>
+<script src="../components/service-cards.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

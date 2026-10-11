@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome — CampusQueue | Walter Sisulu University</title>
+<link rel="icon" type="image/png" href="assets/wsu-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/variables.css">
+<link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+
+<div id="toast-stack" aria-live="polite"></div>
+
+<!-- ======================= WELCOME / LOGIN ======================= -->
+<div id="screen-login">
+  <div class="login-hero">
+    <div class="hero-top">
+      <div class="crest-mark">
+        <img class="wsu-logo-full" src="assets/wsu-logo.jpg" alt="Walter Sisulu University — In pursuit of excellence">
+      </div>
+      <div class="product-name">Campus<span class="accent">Queue</span></div>
+      <p class="product-tag">Smart Queuing. Better Campus.</p>
+    </div>
+
+    <!-- Real campus photo -->
+    <img class="campus-illustration" src="assets/campus-photo.jpg" alt="Walter Sisulu University campus">
+  </div>
+
+  <div class="login-panel">
+    <div class="login-card">
+      <h2>Welcome!</h2>
+      <p class="sub">Login to your account to continue</p>
+
+      <form id="login-form" novalidation>
+      <div class="login-error" id="login-error" role="alert"></div>
+
+      <div class="field">
+        <label for="login-username">Username</label>
+        <div class="input-icon-wrap">
+          <span class="field-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a7 7 0 0 1 7-7h2a7 7 0 0 1 7 7v1"></path></svg></span>
+          <input type="text" id="login-username" maxlength="50" autocomplete="username" placeholder="Enter your username">
+        </div>
+      </div>
+      <div class="field">
+        <label for="login-password">Password</label>
+        <div class="input-icon-wrap has-toggle">
+          <span class="field-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></span>
+          <input type="password" id="login-password" maxlength="128" autocomplete="current-password" placeholder="Enter your password">
+          <button type="button" class="toggle-eye" id="toggle-password" aria-label="Show password"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+        </div>
+      </div>
+      <div class="row-forgot"><a href="#">Forgot password?</a></div>
+
+      <button type="submit" class="btn-login">Login</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="services/state.js"></script>
+<script src="services/api.js"></script>
+<script src="services/authService.js"></script>
+<script src="components/toast.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

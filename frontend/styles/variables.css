@@ -1,0 +1,55 @@
+/* ============================================================
+   CampusQueue — colours, fonts, resets, headings and pop-ups
+   (used by every page)
+   ============================================================ */
+
+:root {
+  --cream: #F7F1E6;
+  --paper: #FFFFFF;
+  --ink: #241714;
+  --maroon: #7A2B1F;
+  --maroon-dark: #5B1C15;
+  --ochre: #D99A2B;
+  --ochre-dark: #B9821F;
+  --teal: #4F8481;
+  --terracotta: #C1603C;
+  --line: #E7DAC7;
+  --muted: #7A6A5D;
+  --sidebar-w: 236px;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Work Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--font-body); }
+button { font-family: var(--font-body); cursor: pointer; }
+
+#toast-stack {
+  position: fixed; top: 1rem; left: 50%; transform: translateX(-50%); z-index: 999;
+  display: flex; flex-direction: column; gap: 0.6rem; width: 100%; max-width: 420px;
+  padding: 0 1rem; pointer-events: none;
+}
+.toast {
+  background: var(--maroon-dark); color: var(--cream); border-left: 4px solid var(--ochre);
+  border-radius: 6px; padding: 0.85rem 1rem; font-size: 0.88rem; box-shadow: 0 8px 24px rgba(43,27,24,0.25);
+  display: flex; align-items: flex-start; gap: 0.6rem; pointer-events: auto; animation: toast-in 0.25s ease-out;
+}
+.toast .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ochre); margin-top: 6px; flex-shrink: 0; }
+.toast.leaving { animation: toast-out 0.25s ease-in forwards; }
+@keyframes toast-in { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes toast-out { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(-16px); } }
+
+/* ================= HEADINGS ================= */
+.section-eyebrow { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 0.3rem; }
+h2 { font-family: var(--font-display); font-weight: 600; margin: 0 0 0.3rem; font-size: 1.25rem; }
+p.helper { color: var(--muted); margin: 0 0 1rem; font-size: 0.87rem; }
+
+/* ================= SMALL SHARED EXTRAS ================= */
+a { color: inherit; }
+.btn-join:focus-visible, .nav-item:focus-visible, .btn-login:focus-visible, .link-quiet:focus-visible {
+  outline: 2px solid var(--ochre); outline-offset: 2px;
+}
+@media (max-width: 600px) {
+  #toast-stack { max-width: 94vw; }
+}
