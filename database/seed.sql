@@ -33,16 +33,16 @@ USE CampusQueue_System;
 -- ---------- Users ----------
 -- (No FK lookups needed here — these are the base rows everything
 -- else references.)
-INSERT INTO users (full_name, username, student_number, email, password_hash, role) VALUES
+INSERT INTO users (full_name, username, student_number, email, password_hash, role, failed_login_attempts, locked_until) VALUES
 ('Siya Mbulelo', '260000001', '260000001', '260000001@mywsu.ac.za',
  'scrypt:32768:8:1$Mfk99iFu9aulKveV$7cb03b8827c00c98d7b4d9b5efa0e0cad66a1e5ecb07c1cf887200b881109cf3c7f62a669c3a4dbbb8fba20d156a0aea48b474c24de0fddf987b3df8f3ffa5c9',
- 'student'),
+ 'student', 0, NULL) ,
 ('Vuyo Mqulwa', '260000002', '260000002', '260000002@mywsu.ac.za',
  'scrypt:32768:8:1$Mfk99iFu9aulKveV$7cb03b8827c00c98d7b4d9b5efa0e0cad66a1e5ecb07c1cf887200b881109cf3c7f62a669c3a4dbbb8fba20d156a0aea48b474c24de0fddf987b3df8f3ffa5c9',
- 'student'),
+ 'student', 0, NULL) ,
 ('Sima Mgqibelo', '260000003', '260000003', '260000003@mywsu.ac.za',
  'scrypt:32768:8:1$Mfk99iFu9aulKveV$7cb03b8827c00c98d7b4d9b5efa0e0cad66a1e5ecb07c1cf887200b881109cf3c7f62a669c3a4dbbb8fba20d156a0aea48b474c24de0fddf987b3df8f3ffa5c9',
- 'student'),
+ 'student', 0, NULL) ,
 ('Admin User', 'admin', NULL, 'admin@iws.ac.za',
  'scrypt:32768:8:1$J4rndokhzQJGbxNm$93bc1505ab659f5707ea7e046ba4cb386fd206bec4e26d0c9d33f5396e9d821b9fbf3ff8c2ddd0adbbb0be676a2f9b861037a4f98d89da102a38b5bd658c2b7a',
  'admin');
