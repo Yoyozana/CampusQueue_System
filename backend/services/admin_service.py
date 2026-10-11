@@ -90,6 +90,7 @@ def list_all_tickets(limit: int = 200):
         d = t.to_dict()
         d["queue_name"] = t.queue.queue_name
         d["student_name"] = t.user.full_name
+        d["student_username"] = t.user.username
         result.append(d)
     return result
 

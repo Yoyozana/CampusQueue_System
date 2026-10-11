@@ -26,3 +26,15 @@ def build_student_email(student_number: str) -> str:
 
 def is_valid_student_number(student_number: str) -> bool:
     return bool(STUDENT_NUMBER_PATTERN.match(student_number or ""))
+
+
+USERNAME_PATTERN = re.compile(r"^[A-Za-z0-9._@-]{1,50}$")
+FULL_NAME_PATTERN = re.compile(r"^[A-Za-z\u00C0-\u017F' .-]{2,100}$")
+
+
+def is_valid_username(username: str) -> bool:
+    return bool(USERNAME_PATTERN.match(username or ""))
+
+
+def is_valid_full_name(full_name: str) -> bool:
+    return bool(FULL_NAME_PATTERN.match(full_name or ""))

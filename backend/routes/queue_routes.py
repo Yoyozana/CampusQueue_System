@@ -43,3 +43,10 @@ def my_active_tickets():
     user_id = int(get_jwt_identity())
     tickets = queue_service.list_active_tickets_for_user(user_id)
     return jsonify({"tickets": tickets}), 200
+
+@bp.route("/my-tickets", methods=["GET"])
+@jwt_required()
+def my_ticket_history():
+    """The student's full ticket history (active + past), stored in the database."""
+    user_id = int(get_jwt_identity())
+    return jsonify({"tickets": queue_service.list_ticket_history_for_user(user_id)}), 200

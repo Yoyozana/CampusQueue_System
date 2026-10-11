@@ -29,7 +29,7 @@ with app.app_context():
     full_name = input("Admin full name: ").strip()
     username = input("Admin username: ").strip()
     email = input("Admin email: ").strip().lower()
-    password = getpass.getpass("Admin password (min 8 chars): ")
+    password = input("Admin password (min 8 chars): ")
 
     if User.query.filter_by(username=username).first():
         print(f"A user with username '{username}' already exists. Skipping.")

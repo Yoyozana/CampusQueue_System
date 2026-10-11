@@ -13,6 +13,8 @@ class User(db.Model):
     password_hash = db.Column(db.String(255), nullable=False)
     role = db.Column(db.Enum("student", "admin", name="user_role"), nullable=False, default="student")
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    failed_login_attempts = db.Column(db.Integer, nullable=False, default=0)
+    locked_until = db.Column(db.DateTime, nullable=True)  # UTC; NULL = not locked
 
     tickets = db.relationship("Ticket", back_populates="user", lazy="dynamic")
     notifications = db.relationship("Notification", back_populates="user", lazy="dynamic")
@@ -80,9 +82,13 @@ class Queue(db.Model):
             "prefix": self.prefix,
             "status": self.status,
             "current_admin_id": self.current_admin_id,
+            "service_name": self.service.service_name if self.service else self.queue_name,
+            "location": self.service.location if self.service else None,
         }
         if include_counts:
             data["waiting_count"] = self.tickets.filter_by(status="waiting").count()
+            serving = self.tickets.filter_by(status="called").order_by(Ticket.called_at.desc()).first()
+            data["serving_ticket_number"] = serving.ticket_number if serving else None
         return data
 
 
@@ -132,6 +138,7 @@ class Ticket(db.Model):
             "id": self.id,
             "queue_id": self.queue_id,
             "ticket_number": self.ticket_number,
+            "sequence_number": self.sequence_number,
             "status": self.status,
             "notified_tier": self.notified_tier,
             "joined_at": self.joined_at.isoformat() if self.joined_at else None,

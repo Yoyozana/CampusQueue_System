@@ -173,3 +173,26 @@ def list_active_tickets_for_user(user_id: int):
 def list_queues():
     """All queues with a live waiting_count, for the student-facing queue list."""
     return [q.to_dict(include_counts=True) for q in Queue.query.all()]
+
+def list_ticket_history_for_user(user_id: int, limit: int = 50):
+    """
+    Every ticket this student has ever had (newest first), with live
+    positions and queue/service details. Because this comes straight from
+    the database, a student sees the same current ticket and history after
+    closing the tab or signing in on another device.
+    """
+    tickets = (
+        Ticket.query.filter_by(user_id=user_id)
+        .order_by(Ticket.joined_at.desc())
+        .limit(limit)
+        .all()
+    )
+    result = []
+    for t in tickets:
+        d = t.to_dict()
+        d["position"] = get_position(t)
+        d["queue_name"] = t.queue.queue_name
+        d["service_name"] = t.queue.service.service_name if t.queue.service else t.queue.queue_name
+        d["location"] = t.queue.service.location if t.queue.service else None
+        result.append(d)
+    return result
